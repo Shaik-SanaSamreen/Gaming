@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Games</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+
+    .logo-bgmi {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:6px;
+    }
+
+    .bgmi-icon {
+      width:72px;
+      height:72px;
+      background: linear-gradient(135deg,#f97316,#dc2626);
+      clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:28px;
+      font-weight:900;
+    }
+
+    .bgmi-text {
+      font-size:28px;
+      font-weight:900;
+      letter-spacing:4px;
+      color:#f97316;
+    }
+
+    .logo-valorant {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:8px;
+    }
+
+    .val-slash {
+      display:flex;
+      gap:2px;
+    }
+
+    .val-slash span {
+      width:14px;
+      height:60px;
+      background:#ff4655;
+      transform:skewX(-15deg);
+    }
+
+    .val-text {
+      font-size:26px;
+      font-weight:900;
+      letter-spacing:6px;
+      color:#ff4655;
+    }
+
+    .logo-freefire {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:6px;
+    }
+
+    .ff-diamond {
+      width:68px;
+      height:68px;
+      background: linear-gradient(135deg,#f59e0b,#ef4444);
+      transform: rotate(45deg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:6px;
+    }
+
+    .ff-diamond span {
+      transform:rotate(-45deg);
+      color:white;
+      font-size:26px;
+      font-weight:900;
+    }
+
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+<!-- NAVBAR -->
+<nav class="bg-black border-b border-purple-500">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+    <h1 class="text-3xl font-bold text-purple-500">
+      Shadow Arena
+    </h1>
+
+    <div class="space-x-6">
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="tournaments.html">Tournaments</a>
+      <a href="teams.html">Teams</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </div>
+</nav>
+
+<section class="py-20 px-8">
+
+<h2 class="text-5xl font-bold text-center text-purple-500 mb-16">
+Featured Games
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- BGMI -->
+<div class="bg-gray-900 rounded-2xl p-10 text-center border border-purple-500">
+  <div class="logo-bgmi">
+    <div class="bgmi-icon">M</div>
+    <div class="bgmi-text">BGMI</div>
+  </div>
+</div>
+
+<!-- VALORANT -->
+<div class="bg-gray-900 rounded-2xl p-10 text-center border border-cyan-500">
+  <div class="logo-valorant">
+    <div class="val-slash">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="val-text">
+      VALORANT
+    </div>
+  </div>
+</div>
+
+<!-- FREE FIRE -->
+<div class="bg-gray-900 rounded-2xl p-10 text-center border border-pink-500">
+  <div class="logo-freefire">
+
+    <div class="ff-diamond">
+      <span>FF</span>
+    </div>
+
+    <div class="text-yellow-400 text-2xl font-bold mt-5">
+      FREE FIRE
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
